@@ -1,19 +1,154 @@
-<!DOCTYPE html!>
-<html lang="pt">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <link rel="stylesheet" href="styles.css">
-    <meta charset="UFT-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Java Scripts-Variaveis</title>
+    <title>Geneci-Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <input type="text" id="userInput">
-    <button onclick="armazenarValor()">Armazenar</button>
-    <p id="valorInserido"></p>
+    <!-- Start with a header-->
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#about">Who Am I</a></li>
+                    <li><a href="#projects">What I do</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- This is the part where I describe who I am and what I do. There is a link to projects I work with-->
+    <section id="profile">
+        <div class="container">
+            <h2>Hi, I am Geneci Cruz</h2>
+            <p>I am a Quality Assurance Test Engineer and I am learning JavaScript to better automate my tests</p>
+            <a href="#projects" class="btn">See some project I worked </a>
+        </div>
+    </section>
+    <!--Section to talk about the page owner-->
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>
+                Experience in designing test plans, scenarios, scripts, and procedures. Certified as qTest Specialist
+                with Tricentis.
+                Testing system modifications to prepare for implementation. Developing testing programs addressing
+                regression testing,
+                negative testing, bug retests, or usability. Documenting software defects, using a bug tracking system -
+                Jira. <br>
 
-    <script src="javascript_variaveis.js"></script>
+                Experience with Agile methodology, as take part in many projects developed using Agile. Skilled with
+                Kaban Board, Scrum
+                Masters and Stand ups. Experience in creating manual testing scripts and executing then through Jira.
+                <br>
+
+                Passionate about working with people of different age group;
+                Great set of skills and knowledge developed from different opportunities in life (leadership,
+                organization, planning,
+                communication, problem-solving, analysis, guidance, creative learning, risk assessment, data protection,
+                troubleshooting, reporting). <br>
+
+                Ten years of experience in managing people. I worked as a primary school principal in Brazil; An
+                experienced person in
+                several fields. Fluent in English and Portuguese and intermediate level of French.
+            </p>
+        </div>
+    </section>
+    <!-- section to describe project and work-->
+    <section id="projects">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="project">
+                <img src="img/bug1.jpg" alt="Project1">
+                <div class="project-info">
+                    <h3>Hunting Systems Bugs</h3>
+                    <p>
+                        Monitoring bug resolution efforts and track success. Participating in product design reviews,
+                        providing input on functional requirements. Reviewing software documentation to ensure technical
+                        accuracy, compliance, completeness, and to mitigate risks.
+                    </p>
+                </div>
+            </div>
+            <div class="project">
+                <img src="img/sql1.jpg" alt="Project2">
+                <div class="project-info">
+                    <h3>Queries Databases</h3>
+                    <p>
+                        A SQL tester is a professional responsible for validating and ensuring the accuracy,
+                        performance, and security of
+                        Structured Query Language (SQL) queries and database systems. Their role encompasses a range
+                        of tasks that include
+                        writing and executing test scripts, verifying data integrity, and ensuring that SQL queries
+                        perform efficiently and as
+                        expected.
+                    </p>
+                    <p>
+                        A SQL tester plays a crucial role in maintaining the reliability, performance, and security
+                        of database systems. By
+                        leveraging their technical expertise and analytical skills, they ensure that SQL queries
+                        function correctly and
+                        efficiently, contributing to the overall quality and robustness of software applications.
+                    </p>
+                </div>
+            </div>
+            <div class="project">
+                <img src="img/testing1.jpg" alt="Project3">
+                <div class="project-info">
+                    <h3>Amazing Knowledge Sharing</h3>
+                    <p>
+                        Experience with Knowledge Management, worked for two years as KBA-Knowledge Based Articles
+                        coach in
+                        previous company.
+                        Helped implement Knowledge Based Articles using ServiceNow tool. Implemented the culture of
+                        knowledge,
+                        creation, storing
+                        and sharing among Application Management System team.
+                    </p>
+                </div>
+            </div>
+            <div class="project">
+                <img src="img/test_engineer1.jpg" alt="Project4">
+                <div class="project-info">
+                    <h3>Process Oriented</h3>
+                    <p>
+                        Work with the obejactive to achieve a common goal producing great outcome. <br>
+                        Focused on continually refining and improving processes, by implementing quality control to
+                        measure the various stages of software development.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <form action="#" method="post">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">E-mail Address</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="email">Leave your message</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+
+                <input type="submit" value="Click to Send">
+            </form>
+        </div>
+    </section>
+
+    <!--Footer information goes here-->
+    <footer>
+        <div class="container">
+            <p>&copy;2024 Geneci Cruz - Portfolio Project</p>
+        </div>
+    </footer>
+
 </body>
 
 </html>
